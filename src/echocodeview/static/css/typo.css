@@ -1,0 +1,205 @@
+.markdown {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #2c2620;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC",
+    "Helvetica Neue", Arial, sans-serif;
+  margin: 1.6em 0 0.6em;
+  line-height: 1.35;
+}
+
+.markdown .headerlink {
+  margin-left: 6px;
+  font-size: 0.85em;
+  color: #9a9184;
+  border-bottom: none;
+  opacity: 0.25;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.markdown .headerlink:hover {
+  color: #0f8b73;
+  opacity: 1;
+}
+
+.markdown h1:hover .headerlink,
+.markdown h2:hover .headerlink,
+.markdown h3:hover .headerlink,
+.markdown h4:hover .headerlink,
+.markdown h5:hover .headerlink,
+.markdown h6:hover .headerlink {
+  opacity: 1;
+}
+
+.markdown p {
+  margin: 0 0 1.1em 0;
+}
+
+.markdown a {
+  color: #0f8b73;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(15, 139, 115, 0.4);
+}
+
+.markdown a:hover {
+  color: #0b6b58;
+  border-bottom-color: rgba(11, 107, 88, 0.7);
+}
+
+.markdown blockquote {
+  margin: 1.2em 0;
+  padding: 0.6em 1.2em;
+  border-left: 3px solid #1abc9c;
+  background: rgba(26, 188, 156, 0.08);
+  color: #5c554a;
+}
+
+.markdown .toc {
+  background: #f7f3ec;
+  border: 1px solid #eee6db;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 0 0 1.4em 0;
+}
+
+.markdown .toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.markdown .toc li {
+  margin: 0.3em 0;
+}
+
+.markdown .toc a {
+  font-size: 0.95em;
+  color: #3d362f;
+  border-bottom: none;
+}
+
+.markdown ul,
+.markdown ol {
+  margin: 0 0 1.2em 1.4em;
+}
+
+.markdown li {
+  margin-bottom: 0.4em;
+}
+
+.markdown pre {
+  background: #f7f3ec;
+  padding: 1em 1.2em;
+  border-radius: 12px;
+  overflow-x: auto;
+  border: 1px solid #eee6db;
+}
+
+.markdown .codehilite {
+  background: #f7f3ec;
+  border: 1px solid #eee6db;
+  border-radius: 12px;
+  padding: 0;
+}
+
+.markdown .codehilite pre {
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+
+.markdown .codehilite .c,
+.markdown .codehilite .c1,
+.markdown .codehilite .cm {
+  color: #7c6f64;
+}
+
+.markdown .codehilite .k,
+.markdown .codehilite .kc,
+.markdown .codehilite .kd,
+.markdown .codehilite .kn,
+.markdown .codehilite .kp,
+.markdown .codehilite .kr {
+  color: #b04a4a;
+  font-weight: 600;
+}
+
+.markdown .codehilite .s,
+.markdown .codehilite .s1,
+.markdown .codehilite .s2,
+.markdown .codehilite .sb,
+.markdown .codehilite .sd,
+.markdown .codehilite .se,
+.markdown .codehilite .sh,
+.markdown .codehilite .si,
+.markdown .codehilite .sr,
+.markdown .codehilite .ss {
+  color: #0f8b73;
+}
+
+.markdown .codehilite .nf,
+.markdown .codehilite .nc,
+.markdown .codehilite .nn {
+  color: #1f5ea8;
+  font-weight: 600;
+}
+
+.markdown .codehilite .mi,
+.markdown .codehilite .mf,
+.markdown .codehilite .m {
+  color: #9c5d1c;
+}
+
+.markdown .codehilite .o,
+.markdown .codehilite .ow,
+.markdown .codehilite .p {
+  color: #5a5248;
+}
+
+.markdown .codehilite .na,
+.markdown .codehilite .nt {
+  color: #2f5c95;
+}
+
+.markdown code {
+  background: #f4f1ea;
+  padding: 0.1em 0.3em;
+  border-radius: 6px;
+  color: #1c6f60;
+}
+
+.markdown pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.markdown table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2em 0;
+  font-size: 0.95em;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid #e5dfd3;
+  padding: 0.6em 0.8em;
+}
+
+.markdown thead {
+  background: #f6f1e8;
+}
+
+.markdown img {
+  max-width: 100%;
+  border-radius: 12px;
+}

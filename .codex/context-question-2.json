@@ -1,0 +1,20 @@
+{
+  "investigations": [
+    {
+      "question": "目标实现目录是否固定为 /home/work/LearnAgent/Server",
+      "evidence": [
+        "仓库根目录未发现 Server 目录",
+        "计划文件明确指向 /home/work/LearnAgent/Server"
+      ],
+      "answer": "将新建 /home/work/LearnAgent/Server 作为实现目录"
+    },
+    {
+      "question": "优先使用的语言/框架是否为 Node.js (npm)",
+      "evidence": [
+        "用户明确提到可考虑 npm 方案",
+        "Node.js 与 npm 在环境中已可用 (node -v, npm -v)"
+      ],
+      "answer": "采用 Node.js + npm 生态实现本地 Web 阅读器"
+    }
+  ]
+}

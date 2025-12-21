@@ -1,0 +1,18 @@
+{
+  "checklist": {
+    "interface_contract_defined": true,
+    "tech_choice_understood": true,
+    "risks_identified": true,
+    "validation_plan_known": true
+  },
+  "notes": {
+    "interface_contract": "CLI 提供 --serve/--dir/--host/--port/--no-open 参数，HTTP 输出 HTML 页面与递归文件树",
+    "tech_choice": "采用 Python + Flask + Markdown，提供 pip 安装与 CLI 入口",
+    "risks": [
+      "端口冲突",
+      "目录中无 Markdown 文件",
+      "大量文件导致首次渲染缓慢"
+    ],
+    "validation": "python -m unittest + 启动服务器冒烟"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "location": {
+    "target_directory": "/home/work/LearnAgent (新增 Python 包将在此处)",
+    "repository_root": "/home/work/LearnAgent",
+    "observed_modules": [
+      "/home/work/LearnAgent/mini-agent/docs",
+      "/home/work/LearnAgent/mini-agent/tour"
+    ]
+  },
+  "current_implementation": {
+    "status": "已存在 /home/work/LearnAgent/Server 的 Node.js Markdown 阅读器实现",
+    "similar_cases": [
+      "/home/work/LearnAgent/Server"
+    ]
+  },
+  "tech_stack": {
+    "detected": "Node.js 项目已存在，尚无 Python 包结构",
+    "notes": "计划新增 Python 包（Flask + Markdown）"
+  },
+  "tests": {
+    "existing_tests": "Node 版本已有 node --test 测试",
+    "validation_method": "Python 包需新增 unittest 及本地验证"
+  },
+  "observations": [
+    "仓库存在 Node 版本实现，需要决定是否保留",
+    "用户需求转为 pip install echocodeview + echocodeview --serve",
+    "代码检索工具 code-index 不可用，已改用 rg"
+  ],
+  "sources": [
+    "/home/work/LearnAgent/README.md",
+    "rg --files /home/work/LearnAgent",
+    "rg --files -g '*server*' /home/work/LearnAgent"
+  ]
+}

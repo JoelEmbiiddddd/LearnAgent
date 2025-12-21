@@ -1,0 +1,105 @@
+.markdown {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #2f2a24;
+}
+
+.markdown p {
+  margin: 0 0 1.2em 0;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+  margin: 1.6em 0 0.6em;
+  line-height: 1.35;
+  color: #1f1a14;
+}
+
+.markdown h1 {
+  font-size: 2em;
+}
+
+.markdown h2 {
+  font-size: 1.6em;
+}
+
+.markdown h3 {
+  font-size: 1.3em;
+}
+
+.markdown ul,
+.markdown ol {
+  margin: 0 0 1.2em 1.4em;
+  padding: 0;
+}
+
+.markdown li {
+  margin-bottom: 0.4em;
+}
+
+.markdown blockquote {
+  margin: 1.2em 0;
+  padding: 0.6em 1.2em;
+  border-left: 3px solid #1abc9c;
+  color: #5c554a;
+  background: rgba(26, 188, 156, 0.08);
+}
+
+.markdown a {
+  color: #12977d;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(18, 151, 125, 0.4);
+}
+
+.markdown a:hover {
+  color: #0f7b66;
+  border-bottom-color: rgba(15, 123, 102, 0.7);
+}
+
+.markdown code {
+  background: #f4f1ea;
+  padding: 0.1em 0.3em;
+  border-radius: 6px;
+  color: #1c6f60;
+}
+
+.markdown pre {
+  background: #f7f3ec;
+  padding: 1em 1.2em;
+  border-radius: 12px;
+  overflow-x: auto;
+  border: 1px solid #eee6db;
+}
+
+.markdown pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.markdown table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2em 0;
+  font-size: 0.95em;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid #e5dfd3;
+  padding: 0.6em 0.8em;
+}
+
+.markdown thead {
+  background: #f6f1e8;
+}
+
+.markdown img {
+  max-width: 100%;
+  border-radius: 12px;
+}

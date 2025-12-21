@@ -1,0 +1,21 @@
+{
+  "known": [
+    "仓库内仅包含 Markdown 文档与说明文件",
+    "未发现现有服务器或前端项目",
+    "用户要求参考 codeviewx 并可采用 npm 方案"
+  ],
+  "unknowns": [
+    {
+      "question": "目标实现目录是否固定为 /home/work/LearnAgent/Server",
+      "priority": "high"
+    },
+    {
+      "question": "优先使用的语言/框架是否为 Node.js (npm) 而非 Python",
+      "priority": "high"
+    },
+    {
+      "question": "是否需要目录级的文件树浏览，而不仅是单文件渲染",
+      "priority": "medium"
+    }
+  ]
+}

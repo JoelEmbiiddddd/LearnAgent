@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:wght@400;600&family=Space+Grotesk:wght@400;500;600&display=swap");
+
+:root {
+  --bg: #f4f1ea;
+  --bg-accent: #ede6da;
+  --surface: #ffffff;
+  --ink: #2f2a24;
+  --muted: #6c655a;
+  --accent: #1abc9c;
+  --accent-dark: #12977d;
+  --border: #e6dfd4;
+  --shadow: 0 18px 45px rgba(41, 34, 24, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #fffaf0, var(--bg)),
+    linear-gradient(120deg, var(--bg), var(--bg-accent));
+  color: var(--ink);
+  font-family: "Source Serif 4", "Iowan Old Style", "Palatino", serif;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.sidebar {
+  padding: 36px 24px 24px 28px;
+  background: linear-gradient(160deg, #fffdf8, #f3ede2);
+  border-right: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.6);
+}
+
+.brand {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 28px;
+}
+
+.brand-title {
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.brand-subtitle {
+  color: var(--muted);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sidebar-section {
+  margin-bottom: 18px;
+}
+
+.sidebar-label {
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+
+.sidebar-path {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.file-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+  padding-right: 6px;
+  overflow-y: auto;
+  max-height: calc(100vh - 210px);
+}
+
+.file-item {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid transparent;
+  color: var(--ink);
+  text-decoration: none;
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+  font-size: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.file-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(41, 34, 24, 0.12);
+}
+
+.file-item--active {
+  border-color: var(--accent);
+  background: rgba(26, 188, 156, 0.12);
+  color: var(--accent-dark);
+}
+
+.file-empty {
+  font-size: 13px;
+  color: var(--muted);
+  padding: 12px;
+}
+
+.content {
+  padding: 48px 72px 80px;
+  animation: rise 0.6s ease-out;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.title-group h1 {
+  margin: 0 0 8px 0;
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+  font-size: 34px;
+  letter-spacing: -0.5px;
+}
+
+.content-path {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.markdown {
+  background: var(--surface);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 36px 40px;
+  max-width: 920px;
+}
+
+.markdown pre,
+.markdown code {
+  font-family: "JetBrains Mono", "SFMono-Regular", "Menlo", monospace;
+}
+
+.heading-anchor {
+  margin-left: 8px;
+  opacity: 0.4;
+  text-decoration: none;
+}
+
+.heading-anchor:hover {
+  opacity: 0.9;
+}
+
+.error-page {
+  max-width: 520px;
+  margin: 20vh auto;
+  padding: 32px;
+  background: var(--surface);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 980px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .file-list {
+    max-height: none;
+  }
+
+  .content {
+    padding: 32px 24px 60px;
+  }
+
+  .markdown {
+    padding: 28px 24px;
+  }
+}

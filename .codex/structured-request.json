@@ -1,0 +1,22 @@
+{
+  "goal": "在 /home/work/LearnAgent 内实现一个可通过 pip 安装的 echocodeview，本地 Web Markdown 阅读器可用 `echocodeview --serve` 启动并自动打开浏览器。",
+  "deliverables": [
+    "可执行 CLI，用于启动本地服务器并打开浏览器",
+    "Markdown 渲染与静态样式资源",
+    "最小单元测试、冒烟测试与功能测试",
+    "使用说明文档"
+  ],
+  "constraints": [
+    "参考 codeviewx 的样式与交互思路",
+    "使用 Python 包生态实现（pip install echocodeview）",
+    "仅本地单用户场景",
+    "不引入额外自研组件"
+  ],
+  "assumptions": [
+    "仓库中不存在现成 Python 服务端项目",
+    "默认运行环境已具备 Python 与 pip"
+  ],
+  "open_questions": [
+    "是否需要保留现有 /home/work/LearnAgent/Server 的 Node 版本"
+  ]
+}

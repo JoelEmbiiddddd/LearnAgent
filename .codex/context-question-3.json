@@ -1,0 +1,16 @@
+{
+  "known": [
+    "用户需要 pip install echocodeview + echocodeview --serve",
+    "需要支持目录及子目录的 Markdown 展示"
+  ],
+  "unknowns": [
+    {
+      "question": "是否保留现有 Node 版本 /home/work/LearnAgent/Server",
+      "priority": "high"
+    },
+    {
+      "question": "CLI 的默认目录是否为当前目录或指定 docs 目录",
+      "priority": "medium"
+    }
+  ]
+}

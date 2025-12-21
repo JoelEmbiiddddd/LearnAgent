@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/typo.css') }}" />
+    <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script defer src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </head>
+  <body>
+    {% macro render_node(node) -%}
+      {% if node.type == "dir" %}
+        <details class="tree-dir" {% if node.open %}open{% endif %}>
+          <summary>
+            <span class="tree-dir-name">{{ node.name }}</span>
+          </summary>
+          <div class="tree-children">
+            {% for child in node.children %}
+              {{ render_node(child) }}
+            {% endfor %}
+          </div>
+        </details>
+      {% else %}
+        <a
+          class="tree-file {% if node.active %}is-active{% endif %}"
+          href="{{ url_for('view_file', relpath=node.path) }}"
+        >
+          {{ node.title }}
+        </a>
+      {% endif %}
+    {%- endmacro %}
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-title">echocodeview</div>
+          <div class="brand-subtitle">Markdown Browser</div>
+        </div>
+        <div class="sidebar-meta">
+          <div class="meta-label">Root</div>
+          <div class="meta-value">{{ root_dir }}</div>
+        </div>
+        <div class="sidebar-actions">
+          <button class="action-button" data-action="expand">Expand</button>
+          <button class="action-button" data-action="collapse">Collapse</button>
+        </div>
+        <nav class="tree">
+          {% for node in file_tree %}
+            {{ render_node(node) }}
+          {% endfor %}
+        </nav>
+      </aside>
+      <main class="content">
+        <header class="content-header">
+          <div>
+            <h1>{{ title }}</h1>
+            <div class="content-path">{{ active_rel }}</div>
+          </div>
+        </header>
+        <article class="markdown typo">
+          {{ markdown_html | safe }}
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

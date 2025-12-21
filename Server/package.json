@@ -1,0 +1,20 @@
+{
+  "name": "md-reader-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local web markdown reader with CLI launcher.",
+  "bin": {
+    "md-reader": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "express": "^4.19.2",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^8.6.7",
+    "open": "^9.1.0"
+  }
+}

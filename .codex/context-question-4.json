@@ -1,0 +1,19 @@
+{
+  "investigations": [
+    {
+      "question": "是否保留现有 Node 版本 /home/work/LearnAgent/Server",
+      "evidence": [
+        "用户当前需求转为 pip install 方式，但未要求删除旧实现"
+      ],
+      "answer": "保留 Node 版本，新增 Python 包并说明使用方式"
+    },
+    {
+      "question": "CLI 默认目录选择",
+      "evidence": [
+        "codeviewx 的 --serve 默认基于输出目录",
+        "当前仓库以文档为主，根目录可作为默认"
+      ],
+      "answer": "默认以当前工作目录为根目录"
+    }
+  ]
+}
