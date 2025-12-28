@@ -23,13 +23,13 @@ python -m pip install -e .
 ### 使用
 ```bash
 # 在当前目录启动
-echocodeview --serve
+echocodeview
 
 # 指定目录
-echocodeview --serve --dir /path/to/docs
+echocodeview --dir /path/to/docs
 
 # 指定端口并关闭自动打开浏览器
-echocodeview --serve --port 4100 --no-open
+echocodeview --port 4100 --no-open
 ```
 
 ### 说明

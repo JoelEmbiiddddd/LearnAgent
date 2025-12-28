@@ -15,5 +15,6 @@ src/echocodeview/static/js/app.js
 src/echocodeview/templates/doc.html
 src/echocodeview/templates/error.html
 tests/test_cli.py
+tests/test_mermaid.py
 tests/test_server.py
 tests/test_tree.py
